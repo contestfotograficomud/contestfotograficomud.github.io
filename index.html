@@ -1,163 +1,93 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito Esempio Contest Fotografico</title>
-    <style>
-        @font-face {
-            font-family: 'FunnelDisplay';
-            src: url('font/FunnelDisplay-Bold.ttf') format('truetype');
-            font-weight: bold;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'FunnelDisplaySemiBold';
-            src: url('font/FunnelDisplay-SemiBold.ttf') format('truetype');
-            font-weight: 600;
-            font-style: normal;
-        }
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            min-height: 100vh;
-            height: auto;
-            overflow-x: hidden;
-            background: #fff;
-            font-family: 'FunnelDisplay', Arial, sans-serif;
-        }
-        .img-container {
-            width: 100vw;
-            min-height: 100vh;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            position: relative;
-        }
-        .site-img {
-            width: 100vw;
-            height: auto;
-            min-height: 100vh;
-            display: block;
-            object-fit: contain;
-        }
-        .overlay-btn {
-            position: absolute;
-            left: calc(50% + 20px);
-            top: calc(80% + 145px);
-            transform: translate(-50%, -50%);
-            background: none;
-            color: #e5458b;
-            font-size: 4.2rem;
-            font-family: 'FunnelDisplay', Arial, sans-serif;
-            font-weight: bold;
-            padding: 0;
-            border-radius: 0;
-            text-decoration: underline;
-            box-shadow: none;
-            transition: color 0.2s;
-            z-index: 10;
-            letter-spacing: 0.04em;
-            border: none;
-            cursor: pointer;
-        }
-        .overlay-btn:hover {
-            color: #4D1C32;
-        }
-        .instagram-icon-container {
-            position: absolute;
-            left: calc(50% + 20px);
-            top: calc(80% + 145px + 450px);
-            transform: translate(-50%, 0);
-            z-index: 10;
-            width: 240px;
-            height: 240px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .instagram-icon-container a {
-            display: inline-block;
-            border-radius: 50%;
-        }
-        .instagram-icon-container a:active .instagram-icon {
-            filter: brightness(0.7) saturate(1.2) hue-rotate(-10deg);
-        }
-        .instagram-icon-container a:hover .instagram-icon,
-        .instagram-icon-container a:focus .instagram-icon {
-            filter: brightness(0.7) saturate(1.2) hue-rotate(-10deg) drop-shadow(0 0 0 #4D1C32);
-        }
-        .instagram-icon {
-            width: 240px;
-            height: 240px;
-            display: block;
-            transition: filter 0.2s;
-        }
-        .mu-d-caption {
-            position: absolute;
-            left: calc(50% + 20px);
-            top: calc(80% + 145px + 450px + 240px + 24px);
-            transform: translate(-50%, 0);
-            font-family: 'FunnelDisplaySemiBold', 'FunnelDisplay', Arial, sans-serif;
-            font-size: 2.2rem;
-            color: #e5458b;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-            text-align: center;
-            z-index: 11;
-            background: none;
-            margin: 0;
-            padding: 0;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-        .mu-d-caption:active,
-        .mu-d-caption:hover, .mu-d-caption:focus {
-            color: #4D1C32;
-        }
-        @media (max-width: 600px) {
-            .site-img {
-                min-height: 100vh;
-            }
-            .overlay-btn {
-                font-size: 2rem;
-                left: 50%;
-                top: 77%;
-                padding: 0.25em 0.7em;
-            }
-            .instagram-icon-container {
-                top: 81.5%;
-                left: 50%;
-                width: 60px;
-                height: 60px;
-            }
-            .instagram-icon {
-                width: 60px;
-                height: 60px;
-            }
-            .mu-d-caption {
-                top: calc(81.5% + 60px + 8px);
-                left: 50%;
-                font-size: 0.95rem;
-                padding: 0 0.2em;
-                line-height: 1.1;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="img-container">
-        <img src="sito 3.png" alt="Sito esempio contest fotografico" class="site-img">
-        <a href="mailto:mud.contestfotografico@gmail.com" class="overlay-btn">PARTECIPA ORA</a>
-        <div class="instagram-icon-container">
-            <a href="https://www.instagram.com/milanouniversitydistrict/" target="_blank" rel="noopener noreferrer">
-                <img src="instagram.svg" alt="Instagram" class="instagram-icon">
-            </a>
-        </div>
-        <a href="https://www.instagram.com/milanouniversitydistrict/" target="_blank" rel="noopener noreferrer" class="mu-d-caption">clicca per scoprire cos'è il Mu.D</a>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MuD Contest Fotografico</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <section class="content-block">
+                <h1>LIBERI LIBERI.</h1>
+                <h3>CONTEST FOTOGRAFICO</h3>
+                <p> Per partecipare al contest <b>ti chiediamo di fotografare ciò che per te significa libertà.</b> Non una definizione astratta, ma un’esperienza reale e personale. Un momento della tua quotidianità, anche legato alla vita universitaria, in cui senti spazio per scegliere, agire, esprimerti. Può essere qualcosa di semplice o di significativo, individuale o condiviso, spontaneo o costruito. Ciò che conta è che l’immagine rappresenti un’esperienza autentica.
+                    <br>
+                    Puoi raccontarla con una <b>singola fotografia</b> oppure con una <b>sequenza</b> coerente (fino a 5 immagini).  Ogni progetto deve essere accompagnato da una <b>breve didascalia</b> (2-3 righe per immagine o per la serie) che spieghi cosa hai fotografato e perché rappresenta per te la libertà.</p>                
+            </section>
 
-    
+            <section class="content-block">
+                <h2>Premi</h2>
+                <p> Il premio per la miglior sequenza consiste in la <b>macchina fotografica analogica Olympus OM10 con ottica 50mm</b>.
+                    <br>
+                    Il premio per la miglior fotografia singola riceverà un <b>corso di formazione</b> con il professionista del settore Gabriele Lopez <b>sull’argomento che più si vuole approfondire</b>.
+                    <br><br>
+                    La premiazione ufficiale avrà luogo il 23/04 alle 20:45, sul palco del Mu.D in <b>piazza Leonardo Da Vinci</b>, Milano.</p>
+            </section>
+
+            <section class="content-block">
+                <h2>Timeline e Scadenze</h2>
+                <p> Il contest aprirà il <b>9 marzo</b> e sarà possibile inviare. le proprie fotografie fino alle <b>12:00 del 9 aprile</b>.
+                    <br>
+                    Ti consigliamo di non aspettare l’ultimo giorno per l’invio, così da avere il tempo di verificare che tutto sia corretto.
+                    <br><br>
+                    Per qualsiasi dubbio, problema tecnico o domanda sulla partecipazione, puoi scriverci via mail (<a href="mailto:mud.contestfotografico@gmail.com">mud.contestfotografico@gmail.com</a>), saremo felici di aiutarti e trovare insieme una soluzione.</p>
+            </section>
+
+            <section class="content-block">
+                <h2>Giuria</h2>
+                <p> La giuria del contest sarà composta da:
+                    <br>
+                    <b>Luca Fiore</b> / critico e autore attivo nel campo della fotografia contemporanea.
+                    <br>
+                    <b>Nadia Righi</b> / storica dell’arte e direttrice del Museo Diocesano Carlo Maria Martini di Milano.
+                    <br>
+                    <b>Piero Pozzi</b> / docente di fotografia presso il Politecnico di Milano.
+                    <br><br>
+                    Saranno selezionate 19 fotografie singole e una sequenza di 5 scatti. I 20 finalisti verranno contattati direttamente via mail.</p>
+            </section>
+
+            <section class="content-block">
+                <h2>L’esposizione al Mu.D</h2>
+                <p> <b>Tutti gli scatti inviati saranno comunque saranno proiettati su schermo durante il Mu.D.</b> Le 19 fotografie selezionate e la sequenza vincitrice saranno esposte tramite stampa in uno spazio dedicato all’evento Mu.D, che si terrà dal 21 al 23 aprile in <b>Piazza Leonardo da Vinci</b>, Milano.</p>
+            </section>
+
+            <section class="content-block">
+                <h2>Come inviarci i tuoi scatti</h2>
+                <p> Invia il tuo materiale alla mail <a href="mailto:mud.contestfotografico@gmail.com">mud.contestfotografico@gmail.com</a>.
+                    <br><br>
+                    SPECIFICHE TECNICHE:<br>
+                    • Formato .jpg<br>
+                    • Risoluzione 300 dpi<br>
+                    • Peso massimo 5 MB per file<br>
+                    <br><br>
+                    NELLA MAIL INSERISCI:<br>
+                    • Nome e cognome<br>
+                    • Eventuale tag Instagram<br>
+                    • Titolo del progetto (facoltativo)<br>
+                    • Didascalia/e (2-3 righe per immagine o sequenza)
+                    <br><br>
+                    HAI DUBBI TECNICI?<br>
+                    <b>Puoi partecipare anche con il tuo telefono</b>, non è necessario avere attrezzatura professionale. Se non hai dimestichezza con formati, dpi o conversioni, inviaci comunque il file alla massima qualità disponibile e ti aiuteremo noi a verificare che sia corretto.
+                    <br>
+                    Se preferisci sistemare l’immagine in autonomia, puoi utilizzare uno strumento gratuito e semplice come <a href="https://www.iloveimg.com/it">ILoveIMG</a>, che permette di convertire file HEIF/HEIC in JPG, comprimere le immagini e modificarne dimensioni e qualità in pochi passaggi.
+                    <br><br>
+                    L’importante è l’idea, per gli aspetti tecnici troviamo insieme la soluzione :)</p>
+            </section>
+
+            <section class="content-block">
+                <h1 style="margin-bottom: 50px;"><a href="mailto:mud.contestfotografico@gmail.com">Partecipa qui!</a></h1>
+            </section>
+        </div>
+        <div class="background-wrapper">
+            <img src="img/stella.png" alt="stella" class="bg-image">
+            <img src="img/1.png" alt="1" class="bg-image">
+            <img src="img/2.png" alt="2" class="bg-image">
+            <img src="img/3.png" alt="3" class="bg-image">
+            <img src="img/4.png" alt="4" class="bg-image">
+            <img src="img/5.png" alt="5" class="bg-image">
+        </div>
+        
+        <img src="img/logoMuDFooter.png" alt="" class="footer">
+    </body>
+</html>
