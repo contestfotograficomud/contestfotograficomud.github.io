@@ -1,3 +1,27 @@
+/* Variante Regular (400) - Usata per h3 e corpo del testo */
+@font-face {
+    font-family: 'Funnel Display';
+    src: url('font/FunnelDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Variante ExtraBold (800) - Usata per h2 */
+@font-face {
+    font-family: 'Funnel Display';
+    src: url('font/FunnelDisplay-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Variante Black (1000) - Usata per h1 */
+@font-face {
+    font-family: 'Funnel Display';
+    src: url('font/FunnelDisplay-Bold.ttf') format('truetype');
+    font-weight: 1000;
+    font-style: normal;
+}
+
 /* RESET E PREPARAZIONE BODY */
 * {
     box-sizing: border-box;
