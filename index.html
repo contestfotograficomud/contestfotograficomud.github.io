@@ -1,98 +1,107 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MuD Contest Fotografico</title>
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <section class="content-block">
-                <h1>LIBERI LIBERI.</h1>
-                <h3>CONTEST FOTOGRAFICO</h3>
-                <p> Per partecipare al contest <b>ti chiediamo di fotografare ciò che per te significa libertà.</b> Non una definizione astratta, ma un’esperienza reale e personale. Un momento della tua quotidianità, anche legato alla vita universitaria, in cui senti spazio per scegliere, agire, esprimerti. Può essere qualcosa di semplice o di significativo, individuale o condiviso, spontaneo o costruito. Ciò che conta è che l’immagine rappresenti un’esperienza autentica.
-                    <br>
-                    Puoi raccontarla con una <b>singola fotografia</b> oppure con una <b>sequenza</b> coerente (fino a 5 immagini). Ogni progetto deve essere accompagnato da una <b>breve didascalia</b> (2-3 righe per immagine o per la serie) che spieghi cosa hai fotografato e perché rappresenta per te la libertà.</p>                
-            </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MuD</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-            <section class="content-block">
-                <h2>Premi</h2>
-                <p> Il premio per la miglior sequenza consiste in la <b>macchina fotografica analogica Olympus OM10 con ottica 50mm</b>.
-                    <br>
-                    Il premio per la miglior fotografia singola riceverà un <b>corso di formazione</b> con il professionista del settore Gabriele Lopez <b>sull’argomento che più si vuole approfondire</b>.
-                    <br><br>
-                    La premiazione ufficiale avrà luogo il 23/04 alle 20:45, sul palco del Mu.D in <b>piazza Leonardo Da Vinci</b>, Milano.</p>
-            </section>
+    body {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      font-family: sans-serif;
+      padding: 2rem 1.5rem 0;
+      gap: 1.5rem;
+    }
 
-            <section class="content-block">
-                <h2>Timeline e Scadenze</h2>
-                <p> Il contest aprirà il <b>9 marzo</b> e sarà possibile inviare. le proprie fotografie fino alle <b>12:00 del 6 aprile</b>.
-                    <br>
-                    Ti consigliamo di non aspettare l’ultimo giorno per l’invio, così da avere il tempo di verificare che tutto sia corretto.
-                    <br><br>
-                    Per qualsiasi dubbio, problema tecnico o domanda sulla partecipazione, puoi scriverci via mail (<a href="mailto:mud.contestfotografico@gmail.com">mud.contestfotografico@gmail.com</a>), saremo felici di aiutarti e trovare insieme una soluzione.</p>
-            </section>
+    .nav-logo {
+      height: 50px;
+      width: auto;
+      display: block;
+    }
 
-            <section class="content-block">
-                <h2>Giuria</h2>
-                <p> La giuria del contest sarà composta da:
-                    <br>
-                    <b>Luca Fiore</b> / critico e autore attivo nel campo della fotografia contemporanea.
-                    <br>
-                    <b>Nadia Righi</b> / storica dell’arte e direttrice del Museo Diocesano Carlo Maria Martini di Milano.
-                    <br>
-                    <b>Piero Pozzi</b> / docente di fotografia presso il Politecnico di Milano.
-                    <br><br>
-                    Saranno selezionate 19 fotografie singole e una sequenza di 5 scatti. I 20 finalisti verranno contattati direttamente via mail.</p>
-            </section>
+    .nav-logo-fallback {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
 
-            <section class="content-block">
-                <h2>L’esposizione al Mu.D</h2>
-                <p> <b>Tutti gli scatti inviati saranno comunque saranno proiettati su schermo durante il Mu.D.</b> Le 19 fotografie selezionate e la sequenza vincitrice saranno esposte tramite stampa in uno spazio dedicato all’evento Mu.D, che si terrà dal 21 al 23 aprile in <b>Piazza Leonardo da Vinci</b>, Milano.</p>
-            </section>
+    .main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
 
-            <section class="content-block">
-                <h2>Come inviarci i tuoi scatti</h2>
-                <p> Invia il tuo materiale alla mail <a href="mailto:mud.contestfotografico@gmail.com">mud.contestfotografico@gmail.com</a>.
-                    <br><br>
-                    SPECIFICHE TECNICHE:<br>
-                    • Formato .jpg<br>
-                    • Risoluzione 300 dpi<br>
-                    • Peso massimo 5 MB per file<br>
-                    <br><br>
-                    NELLA MAIL INSERISCI:<br>
-                    • Nome e cognome<br>
-                    • Eventuale tag Instagram<br>
-                    • Titolo del progetto (facoltativo)<br>
-                    • Didascalia/e (2-3 righe per immagine o sequenza)
-                    <br><br>
-                    HAI DUBBI TECNICI?<br>
-                    <b>Puoi partecipare anche con il tuo telefono</b>, non è necessario avere attrezzatura professionale. Se non hai dimestichezza con formati, dpi o conversioni, inviaci comunque il file alla massima qualità disponibile e ti aiuteremo noi a verificare che sia corretto.
-                    <br>
-                    Se preferisci sistemare l’immagine in autonomia, puoi utilizzare uno strumento gratuito e semplice come <a href="https://www.iloveimg.com/it">ILoveIMG</a>, che permette di convertire file HEIF/HEIC in JPG, comprimere le immagini e modificarne dimensioni e qualità in pochi passaggi.
-                    <br><br>
-                    L’importante è l’idea, per gli aspetti tecnici troviamo insieme la soluzione :)</p>
-            </section>
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      padding-top: 56.25%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
 
-            <section class="content-block">
-                <h1 style="margin-bottom: 50px;"><a href="mailto:mud.contestfotografico@gmail.com">Partecipa qui!</a></h1>
-            </section>
-        </div>
-        <div class="background-wrapper">
-            <img src="img/stella.png" alt="stella" class="bg-image">
-            <img src="img/1.png" alt="1" class="bg-image">
-            <img src="img/2.png" alt="2" class="bg-image">
-            <img src="img/3.png" alt="3" class="bg-image">
-            <img src="img/4.png" alt="4" class="bg-image">
-            <img src="img/5.png" alt="5" class="bg-image">
-        </div>
-        
-        <img src="img/logoMuDFooter.png" alt="" class="footer">
-    </body>
+    .video-container iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      font-size: 0.75rem;
+      color: #888;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.75rem 0 1rem;
+      margin-top: 1.5rem;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    footer a:hover { color: #000; }
+  </style>
+</head>
+<body>
+
+  <img
+    src="logoMuD.png"
+    alt="MuD logo"
+    class="nav-logo"
+    onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='block';"
+  />
+  <span id="logo-fallback" style="display:none;" class="nav-logo-fallback">MuD</span>
+
+  <div class="main">
+    <div class="video-container">
+      <iframe
+        src="https://drive.google.com/file/d/1cFhI4xBVXKW6vcwo_MdPF44xjsq2Fe9R/preview"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://www.instagram.com/milanouniversitydistrict" target="_blank" rel="noopener">@milanouniversitydistrict</a>
+    <span>© MuD 2026</span>
+  </footer>
+
+</body>
 </html>
